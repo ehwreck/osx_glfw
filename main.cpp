@@ -1,6 +1,8 @@
+#define GLEW_STATIC
 #define GL_SILENCE_DEPRECATION
 
 #include <iostream>
+#include <GLEW/glew.h>
 #include <GLFW/glfw3.h>
 
 using namespace std;
@@ -23,6 +25,8 @@ int main()
 
     /* Make the window's context current */
     glfwMakeContextCurrent(window);
+
+    glewInit();
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))

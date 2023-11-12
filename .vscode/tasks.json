@@ -9,6 +9,7 @@
         "-I${workspaceFolder}/include",
         "-L${workspaceFolder}/lib",
         "-lglfw3",
+        "-lGLEW",
         "-framework",
         "OpenGL",
         "-framework",
